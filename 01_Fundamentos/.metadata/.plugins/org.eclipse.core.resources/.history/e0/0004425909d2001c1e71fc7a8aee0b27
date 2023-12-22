@@ -1,0 +1,33 @@
+package qintess.academiajava.estruturasfor.exercicios;
+
+import javax.swing.JOptionPane;
+
+public class Ex01_ContarPares {
+	public static void main(String[] args) {
+		/*
+		 * Neste programa, o usuário escolhe um valor minimo e um valor
+		 * maximo. O programa apresenta a quantidade de números pares
+		 * existentes entre o mínimo e o máximo informados.
+		 */
+		
+		int minimo = Integer.parseInt(JOptionPane.showInputDialog("Valor minimo: "));
+		int maximo = Integer.parseInt(JOptionPane.showInputDialog("Valor Máximo: "));
+		
+		// Vamos fazer uma validação. Validando se o mínimo é menor que o máximo
+		if(minimo >= maximo) {
+			JOptionPane.showMessageDialog(null, "O valor máximo deverá ser maior que o mínimo");
+			return;
+		}
+		
+		int quantidade = 0; //variavel que representara a qtdade de numeros pares
+		
+		for (int i = minimo; i <= maximo; i++) {
+			if(i % 2 == 0) {
+				quantidade++;
+				
+			}
+			
+		}
+		
+	}
+}

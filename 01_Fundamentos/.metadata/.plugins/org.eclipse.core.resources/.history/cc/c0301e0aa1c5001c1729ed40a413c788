@@ -1,0 +1,7 @@
+package qintess.academiajava.variaveis.alfanumericas;
+
+public class VariaveisString01 {
+	public static void main(String[] args) {
+		
+	}
+}

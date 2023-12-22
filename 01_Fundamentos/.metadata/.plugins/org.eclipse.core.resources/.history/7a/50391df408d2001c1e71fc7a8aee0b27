@@ -1,0 +1,7 @@
+package qintess.academiajava.estruturasfor.exercicios;
+
+public class Ex01_ContarPares {
+	public static void main(String[] args) {
+		
+	}
+}

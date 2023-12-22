@@ -1,0 +1,41 @@
+
+public class ClientesPedidos {
+	public static void main(String[] args) {
+		
+		//instanciando o objeto:
+		PessoaFisica cliente1 = new PessoaFisica();
+		
+		Cardapio pizza = new Cardapio();
+
+		//declarando os valores dos atributos
+		cliente1.nome = "Maria Silva";
+		cliente1.endereco = "Rua Jose Bonifacio, 333";
+		cliente1.pedido1 = 01;
+		cliente1.cpf = "12345678901";
+		
+		pizza.saborpizza1 = "Calabresa";
+		pizza.valor = 26.50;
+
+
+		//Chamando o m�todo:
+		cliente1.fazerPedido(pizza);
+
+
+		PessoaJuridica cliente2 = new PessoaJuridica();
+		
+		//declarando os valores dos atributos
+		cliente2.nome = "Pearsons";
+		cliente2.endereco = "Rua Jose Bonifacio, 334";
+		cliente2.pedido1 = 02;
+		cliente2.cnpj = "156425000198";
+		
+		pizza.saborpizza1 = "Bauru";
+		pizza.valor = 20;
+
+
+		//Chamando o m�todo:
+		cliente2.fazerPedido(pizza);
+
+		
+		}
+}
